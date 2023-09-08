@@ -1,0 +1,12 @@
+translations:
+  de_DE:
+    pagination:
+      previous: "&6&lZurück"
+      next: "&6&lWeiter"
+    gui:
+      tags:
+        info: "&6&lINFO"
+        title: "Tags"
+        remove: "&7Entfernen &a(Klicken)"
+    messages:
+      noperms: "&cDu hast keine Rechte, um diesen Befehl auszuführen!"
