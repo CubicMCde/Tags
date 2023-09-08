@@ -1,0 +1,4 @@
+name: Tags
+version: '${project.version}'
+main: de.xconnortv.tags.Tags
+api-version: '1.20'
