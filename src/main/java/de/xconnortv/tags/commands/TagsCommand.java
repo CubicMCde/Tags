@@ -12,6 +12,7 @@ import org.jetbrains.annotations.NotNull;
 public class TagsCommand extends AbstractCommand {
     public TagsCommand(@NotNull Tags instance) {
         super("tags", instance);
+        this.register(new Reload(this));
     }
 
     @Override

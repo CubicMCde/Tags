@@ -23,11 +23,11 @@ public class Tag {
         this.symbol = ChatColor.translateAlternateColorCodes('&', symbol);
     }
 
-    public ItemStack getItemStack(Material material, Tags instance){
+    public ItemStack getItemStack(Material material, Tags instance, String name, String lore) {
         ItemStack stack = new ItemStackBuilder(material)
-                .setDisplayName("§7Name: §6§l" + this.name)
+                .setDisplayName(name.replace("%s", this.name))
                 .setLore(new String[] {
-                        "§7Tablist Symbol: " + this.symbol
+                        lore.replace("%s", this.symbol)
                 })
                 .build();
         ItemMeta meta = stack.getItemMeta();

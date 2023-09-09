@@ -8,5 +8,7 @@ translations:
         info: "&6&lINFO"
         title: "Tags"
         remove: "&7Entfernen &a(Klicken)"
+        symbol: "&7Tablist Symbol: %s"
+        name: "&7Name: &6&l%s"
     messages:
       noperms: "&cDu hast keine Rechte, um diesen Befehl auszuführen!"

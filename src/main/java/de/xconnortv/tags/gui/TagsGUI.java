@@ -74,9 +74,9 @@ public class TagsGUI extends Gui {
 
     }
 
-    private void createPerkItem(Tag tag) {
+    private void createTagItem(Tag tag) {
         pagination.addItem(new Icon(
-                tag.getItemStack(Material.NAME_TAG, Tags.getInstance())
+                tag.getItemStack(Material.NAME_TAG, Tags.getInstance(), translatable.resolve("name"), translatable.resolve("symbol"))
         ).onClick(event -> {
             Tags.getInstance().getTagManager().setPlayerTag(player, tag);
             player.playSound(player.getLocation(), Sound.BLOCK_STONE_BUTTON_CLICK_ON, 2, 2);
@@ -88,7 +88,7 @@ public class TagsGUI extends Gui {
         pagination.getItems().clear();
         Tags.getInstance().getTagManager().getTags().ifPresent(tags -> {
             for(Tag t : tags) {
-                createPerkItem(t);
+                createTagItem(t);
             }
         });
 

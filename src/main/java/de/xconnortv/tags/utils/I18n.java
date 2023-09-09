@@ -5,6 +5,7 @@ import lombok.Getter;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.ConfigurationSection;
 
+import java.nio.file.LinkOption;
 import java.util.HashMap;
 import java.util.Objects;
 
@@ -27,6 +28,7 @@ public class I18n {
 
     public void reload() {
         this.i18nConfig.reloadConfig();
+        loadTranslations();
     }
 
     public void updateLanguage(String language, boolean config) {
@@ -36,6 +38,7 @@ public class I18n {
 
 
     private void loadTranslations() {
+
         this.translations.clear();
         if(!this.i18nConfig.get().contains(TRANSLATION_PATH)) {
             return;

@@ -57,6 +57,14 @@ public final class Tags extends JavaPlugin {
         this.registerCommand(new TagsCommand(this), null);
     }
 
+    public void reload() {
+        defaultConfig.reloadConfig();
+        i18n.reload();
+        databaseManager.disconnect();
+        databaseManager.connect();
+    }
+
+
     @Override
     public void onDisable() {
         databaseManager.disconnect();
