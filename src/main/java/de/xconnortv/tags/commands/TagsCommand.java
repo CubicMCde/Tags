@@ -13,6 +13,7 @@ public class TagsCommand extends AbstractCommand {
     public TagsCommand(@NotNull Tags instance) {
         super("tags", instance);
         this.register(new Reload(this));
+        this.register(new Language(this));
     }
 
     @Override

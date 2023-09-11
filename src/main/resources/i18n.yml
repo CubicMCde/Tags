@@ -7,8 +7,14 @@ translations:
       tags:
         info: "&6&lINFO"
         title: "Tags"
+        current: "&7Aktuell: &6&l%s"
         remove: "&7Entfernen &a(Klicken)"
         symbol: "&7Tablist Symbol: %s"
         name: "&7Name: &6&l%s"
     messages:
       noperms: "&cDu hast keine Rechte, um diesen Befehl auszuführen!"
+      reload: "&aErfolgreich neugeladen!"
+      language:
+        current: "&7Die aktuelle Sprache ist: &6&l%s"
+        notfound: "&cDie Sprache &6&l%s &f&cwurde nicht gefunden!"
+        changed: "&7Die Sprache wurde zu &6&l%s &7geändert!"

@@ -17,7 +17,7 @@ public class Reload extends SubCommand {
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         getInstance().reload();
-        commandSender.sendMessage(getInstance().formatMessage("&aSuccessfully reloaded!"));
+        commandSender.sendMessage(getInstance().formatMessage(resolve("reload")));
         return true;
     }
 

@@ -49,7 +49,7 @@ public class TagsGUI extends Gui {
                 SkullCreator.itemFromBase64(SkullsRegistry.INFO_SKULL)
         ).setName(translatable.resolve("info"));
 
-        icon.setLore(PlaceholderAPI.setPlaceholders(player, "§7§oAktueller Tag: §6§l%tags_tag%"), translatable.resolve("remove"));
+        icon.setLore(translatable.resolve("current").replace("%s", PlaceholderAPI.setPlaceholders(player, "%tags_tag%")), translatable.resolve("remove"));
 
         icon.onClick(e -> {
             Tags.getInstance().getTagManager().removePlayerTag(player);
